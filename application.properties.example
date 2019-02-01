@@ -1,0 +1,15 @@
+# ------------------------------------------------------------------------------
+# Local application properties - overrides the default appplication properties.
+# ------------------------------------------------------------------------------
+
+# maximum size of uploaded files
+spring.servlet.multipart.max-file-size=64MB
+spring.servlet.multipart.max-request-size=64MB
+
+# "prod" or "dev"
+spring.profiles.active=prod
+
+# database configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/prd_imagearchive?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+spring.datasource.username=secret
+spring.datasource.password=secret
